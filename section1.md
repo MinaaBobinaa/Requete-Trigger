@@ -1,7 +1,7 @@
 # Section 1 :Liste des index
 
 >Avant d'exécuter les commandes d'index ci-dessous, veuillez vous assurer d'avoir lu attentivement
-> le fichier README.md. Assurez-vous d'avoir suivi et achevé l'ÉTAPE I) décrite dans ce fichier.
+> le fichier README.md. Assurez-vous d'avoir suivi et achevé les etapes décrites dans ce fichier en ordre.
 > 
 > Veuillez exécuter ces trois nouvelles commandes de création d'index pour améliorer les performances de
 > la base de données conformément aux recommandations fournies.

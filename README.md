@@ -2,7 +2,6 @@
 
 ## I)Ordre d'exécution des Fichiers SQL:
 
----
 ### ***Procédure de Reprise en Cas d'Échec ou d'Erreur dans l'Ordre d'Exécution:***
 >En cas de dysfonctionnement ou d'erreur dans l'exécution des étapes, ou si l'ordre
 > d'exécution est incorrect, il est recommandé de procéder à la suppression des 
@@ -61,6 +60,18 @@ hésitation pour garantir le bon fonctionnement du projet.
 Veillez à exécuter ce fichier avant les fichiers qui suivent, en prenant en
 considération l'avertissement concernant le trigger pour éviter tout impact 
 indésirable sur les résultats.
+
+---
+### Ajout des Index:
+Ci-dessous, je liste les index à Exécuter :
+
+```sql
+CREATE INDEX idx_commande_date_commande ON Commande(date_commande);
+CREATE INDEX idx_produit_description ON Produit(description);
+CREATE INDEX idx_livraison_date_livraison ON Livraison(date_livraison);
+```
+
+>[Cliquez ici pour plus d'info sur cette section et pour la liste entiere des index](section1.md)
 
 ---
 ### Exécution des Requêtes du TP3:
