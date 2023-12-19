@@ -30,7 +30,7 @@ DROP TABLE Approvisionnement CASCADE CONSTRAINTS;
 DROP TABLE Paiement CASCADE CONSTRAINTS;
 ```
 ---
-### Instructions pour Initialiser la Base de Données
+### 1. Instructions pour Initialiser la Base de Données
 
 Pour initialiser la base de données avec les données et les contraintes nécessaires, veuillez suivre cet ordre d'exécution :
 
@@ -44,7 +44,7 @@ Veillez à respecter cet ordre d'exécution pour assurer la cohérence des donn�
 >[Cliquez ici pour plus d'info sur cette section](Initialisation.md)
 
 ---
-### Exécution des Requêtes du TP Précédent:
+### 2. Exécution des Requêtes du TP Précédent:
 
 Pour exécuter les requêtes du TP précédent, veuillez suivre ces instructions :
 
@@ -62,7 +62,7 @@ considération l'avertissement concernant le trigger pour éviter tout impact
 indésirable sur les résultats.
 
 ---
-### Ajout des Index:
+### 3. Ajout des Index:
 Ci-dessous, je liste les index à Exécuter :
 
 ```sql
@@ -74,7 +74,7 @@ CREATE INDEX idx_livraison_date_livraison ON Livraison(date_livraison);
 >[Cliquez ici pour plus d'info sur cette section et pour la liste entiere des index](section1.md)
 
 ---
-### Exécution des Requêtes du TP3:
+### 4. Exécution des Requêtes du TP3:
 Enfin vous pouvez exécuter les requêtes du TP3, veuillez suivre ces instructions :
 
 1. **Requetes-TP3.sql :** Ensuite, exécutez ce fichier pour avancer vers les requêtes
