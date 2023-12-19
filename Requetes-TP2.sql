@@ -108,16 +108,6 @@ BEGIN
 END;
 /
 
---test
-INSERT INTO Paiement (date_paiement, montant, type_paiement, no_livraison) 
-VALUES ('27-DEC-2022', 100.00, 'CASH', 50041);
-INSERT INTO Paiement (date_paiement, montant, type_paiement, no_livraison) 
-VALUES ('28-DEC-2022', 50.00, 'CASH', 51076);
-
-SELECT * FROM Paiement WHERE no_livraison = 50041;
-SELECT * FROM Paiement WHERE no_livraison = 51076;
-
-
 --Requête 3.2
 --a)
 CREATE VIEW V_commande_item AS
