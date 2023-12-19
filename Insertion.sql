@@ -1,0 +1,103 @@
+--------------------------INSERTION-----------------------------
+
+INSERT INTO Adresse VALUES (1, 123, 'Maple Street', 'Toronto', 'Canada', 'M5V 2W6');
+INSERT INTO Adresse VALUES (2, 456, 'Birch Avenue', 'Montreal', 'Canada', 'H2X 1Y4');
+INSERT INTO Adresse VALUES (3, 789, 'Cedar Lane', 'Vancouver', 'Canada', 'V6C 1B1'); 
+INSERT INTO Adresse VALUES (4, 101, 'Elm Street', 'Calgary', 'Canada', 'T2P 0R5');
+INSERT INTO Adresse VALUES (5, 234, 'Oak Road', 'Ottawa', 'Canada', 'K1P 5R2');
+INSERT INTO Adresse VALUES (6, 789, 'Willow Street', 'Montreal', 'Canada', 'H2X 2Y6');
+INSERT INTO Adresse VALUES (7, 101, 'Pine Lane', 'Vancouver', 'Canada', 'V6C 1B3');
+INSERT INTO Adresse VALUES (8, 789, 'Chestnut Avenue', 'Montreal', 'Canada', 'H2X 2Y8');
+INSERT INTO Adresse VALUES (9, 101, 'Sycamore Lane', 'Vancouver', 'Canada', 'V6C 1B4');
+INSERT INTO Adresse VALUES (10, 789, 'Cypress Road', 'Montreal', 'Canada', 'H2X 2Y9');
+
+
+INSERT INTO Client VALUES (100, 'Tremblay', 'Michel', '(123) 456-7890',1);		---IMPORTANT: INCLUDE
+INSERT INTO Client VALUES (101, 'Johnson', 'Emily', '(234) 567-8901', 2);
+INSERT INTO Client VALUES (102, 'Brown', 'Michael', '(345) 678-9012', 3);
+INSERT INTO Client VALUES (103, 'Davis', 'Sarah', '(456) 789-0123', 4);
+INSERT INTO Client VALUES (104, 'Wilson', 'James', '(567) 890-1234', 5);
+
+INSERT INTO Commande VALUES (201, '15-OCT-2022', 'ENCOURS', 100);			---IMPORTANT: INCLUDE
+INSERT INTO Commande VALUES (202, '16-OCT-2022', 'ENCOURS', 100);			---IMPORTANT: INCLUDE
+INSERT INTO Commande VALUES (203, '17-OCT-2022', 'FERMEE', 101);
+INSERT INTO Commande VALUES (204, '18-OCT-2022', 'ENCOURS', 102);
+INSERT INTO Commande VALUES (205, '19-OCT-2022', 'ANNULEE', 102);
+INSERT INTO Commande VALUES (206, '24-OCT-2022', 'FERMEE', 103);
+INSERT INTO Commande VALUES (207, '31-OCT-2022', 'ENCOURS', 104);			---IMPORTANT: INCLUDE
+INSERT INTO Commande VALUES (208, '04-NOV-2022', 'ENCOURS', 104);			---IMPORTANT: INCLUDE
+INSERT INTO Commande VALUES (300, '05-NOV-2022', 'ENCOURS', 104);
+
+
+INSERT INTO Fournisseur VALUES (45, 'ABC Electronics', '(416) 555-1234', 6);
+INSERT INTO Fournisseur VALUES (23, 'GitGud Appliances', '(514) 555-5678', 7);
+INSERT INTO Fournisseur VALUES (34, 'Smith Hardware', '(604) 555-7890', 8);
+INSERT INTO Fournisseur VALUES (74, 'Johnson Supplies', '(905) 555-2345', 9);
+INSERT INTO Fournisseur VALUES (65, 'Maple Technologies', '(613) 555-8765', 10);
+
+INSERT INTO Produit VALUES (301, 'Ordinateur portable', '15-JUN-2022', 50, 10, 45);
+INSERT INTO Produit VALUES (302, 'Smartphone','16-JUN-2022', 100, 20, 23);
+INSERT INTO Produit VALUES (303, 'Tablette','15-JUL-2022', 30, 5, 45);
+INSERT INTO Produit VALUES (304, 'Clavier','07-AUG-2022', 60, 15, 34);
+INSERT INTO Produit VALUES (305, 'Routeur','20-SEP-2022', 25, 5, 74);
+INSERT INTO Produit VALUES (306, 'Écran','28-SEP-2022', 35, 7, 65);
+INSERT INTO Produit VALUES (307, 'Imprimante','01-OCT-2022', 20, 5, 65);
+
+INSERT INTO Prix_Produit VALUES (1299.99, '16-JUN-2022', 301);
+INSERT INTO Prix_Produit VALUES (699.99, '17-JUN-2022', 302);
+INSERT INTO Prix_Produit VALUES (499.99, '16-JUL-2022', 303);
+INSERT INTO Prix_Produit VALUES (89.99, '09-AUG-2022', 304);
+INSERT INTO Prix_Produit VALUES (79.99, '21-SEP-2022', 305);
+INSERT INTO Prix_Produit VALUES (389.99, '28-SEP-2022', 306);
+INSERT INTO Prix_Produit VALUES (1689.99, '02-OCT-2022', 307);
+
+INSERT INTO Produit_Fournisseur VALUES (301,45);
+INSERT INTO Produit_Fournisseur VALUES (302,23);
+INSERT INTO Produit_Fournisseur VALUES (303,45);
+INSERT INTO Produit_Fournisseur VALUES (304,34);
+INSERT INTO Produit_Fournisseur VALUES (305,74);
+INSERT INTO Produit_Fournisseur VALUES (306,65);
+INSERT INTO Produit_Fournisseur VALUES (307,65);
+
+INSERT INTO Commande_Produit VALUES (201, 301, 5);					---IMPORTANT: INCLUDE
+INSERT INTO Commande_Produit VALUES (201, 302, 2);					---IMPORTANT: INCLUDE
+INSERT INTO Commande_Produit VALUES (201, 303, 4);					---IMPORTANT: INCLUDE
+INSERT INTO Commande_Produit VALUES (202, 304, 3);					---IMPORTANT: INCLUDE
+INSERT INTO Commande_Produit VALUES (202, 305, 1);					---IMPORTANT: INCLUDE
+INSERT INTO Commande_Produit VALUES (202, 306, 4);					---IMPORTANT: INCLUDE
+INSERT INTO Commande_Produit VALUES (204, 307, 8);
+INSERT INTO Commande_Produit VALUES (205, 302, 2);
+INSERT INTO Commande_Produit VALUES (207, 304, 3);
+INSERT INTO Commande_Produit VALUES (208, 301, 1);
+INSERT INTO Commande_Produit VALUES (300, 301, 5);
+INSERT INTO Commande_Produit VALUES (300, 305, 2);
+
+INSERT INTO Livraison VALUES (50021, '25-OCT-2022');					---IMPORTANT: INCLUDE
+INSERT INTO Livraison VALUES (50041, '25-NOV-2022');
+INSERT INTO Livraison VALUES (50456, '27-NOV-2022');
+INSERT INTO Livraison VALUES (50643, '28-NOV-2022'); 
+INSERT INTO Livraison VALUES (51076, '29-NOV-2022');
+INSERT INTO Livraison VALUES (51083, '01-DEC-2022');
+
+INSERT INTO Livraison_Commande_Produit VALUES (50041, 201, 303, 1);
+INSERT INTO Livraison_Commande_Produit VALUES (50456, 202, 304, 3);
+INSERT INTO Livraison_Commande_Produit VALUES (50643, 202, 306, 2);
+INSERT INTO Livraison_Commande_Produit VALUES (51076, 205, 302, 1);
+INSERT INTO Livraison_Commande_Produit VALUES (51083, 208, 301, 1);
+
+INSERT INTO Approvisionnement VALUES (301, 45, 50, '02-SEP-2022', 'LIVRE');
+INSERT INTO Approvisionnement VALUES (302, 23, 100, '03-SEP-2022', 'ENCOURS');
+INSERT INTO Approvisionnement VALUES (303, 45, 30, '15-OCT-2022', 'LIVRE');
+INSERT INTO Approvisionnement VALUES (304, 34, 40, '20-OCT-2022', 'ANNULE');
+INSERT INTO Approvisionnement VALUES (305, 74, 20, '07-OCT-2022', 'LIVRE');
+INSERT INTO Approvisionnement VALUES (306, 65, 60, '10-NOV-2022', 'ENCOURS');
+INSERT INTO Approvisionnement VALUES (307, 65, 80, '12-NOV-2022', 'LIVRE');
+
+
+INSERT INTO Paiement VALUES (1, '25-OCT-2022', 250.00, 'CASH', NULL, NULL, NULL, NULL, 50021);	---IMPORTANT: INCLUDE
+INSERT INTO Paiement VALUES (2, '28-OCT-2022', 350.00, 'CHEQUE', 123456, 'Banque Java', NULL, NULL, 50021);  ---IMPORTANT: INCLUDE
+INSERT INTO Paiement VALUES (3, '29-OCT-2022', 300.00, 'CREDIT', NULL, NULL, '4521876509877541', 'MASTERCARD', 50021);  ---IMPORTANT: INCLUDE
+INSERT INTO Paiement VALUES (4, '02-NOV-2022', 150.00, 'CREDIT', NULL, NULL, '1234567890123456', 'VISA', 50456);
+INSERT INTO Paiement VALUES (5, '05-NOV-2022', 200.00, 'CHEQUE', 789012, 'Banque ABD', NULL, NULL, 50643);
+INSERT INTO Paiement VALUES (6, '18-NOV-2022', 450.00, 'CREDIT', NULL, NULL, '4321876509876543', 'MASTERCARD', 50456);
+INSERT INTO Paiement VALUES (7, '25-NOV-2022', 275.00, 'CASH', NULL, NULL, NULL, NULL, 51083);
