@@ -42,6 +42,7 @@ Pour initialiser la base de données avec les données et les contraintes néces
 3. **Insertion.sql :** Enfin, exécutez ce script pour insérer les données initiales dans les tables créées et ajouter d'éventuelles contraintes.
 
 Veillez à respecter cet ordre d'exécution pour assurer la cohérence des données et des contraintes dans la base de données.
+>[Cliquez pour plus d'info sur cette section](Initialisation.md)
 
 ---
 ### Exécution des Requêtes du TP Précédent:
