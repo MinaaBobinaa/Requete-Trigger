@@ -2,7 +2,7 @@
 
 >Tous les tests se retrouvent dans ('/Tests/Test-Triggers.sql')
 >
->Prérequis: `Triggers.sql` et `Insertion.sql`
+>Prérequis: `Triggers.sql`, `Insertion.sql` et `Requetes-TP2.sql`
 
 ## Test I : Tentative de Suppression de produit
 
