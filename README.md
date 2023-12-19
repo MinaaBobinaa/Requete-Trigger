@@ -1,6 +1,6 @@
 # INF3080-TP3
 
-## Ordre d'exécution des Fichiers SQL:
+## I)Ordre d'exécution des Fichiers SQL:
 
 ---
 ### ***Procédure de Reprise en Cas d'Échec ou d'Erreur dans l'Ordre d'Exécution:***
@@ -70,7 +70,7 @@ Enfin vous pouvez exécuter les requêtes du TP3, veuillez suivre ces instructio
 du TP3 . Assurez-vous de l'exécuter après Requetes-TP2.sql et avant les
 fichiers de test.
 
-## Les Tests:
+## II)Les Tests:
 
 
 
