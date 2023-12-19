@@ -81,7 +81,23 @@ Enfin vous pouvez exécuter les requêtes du TP3, veuillez suivre ces instructio
 du TP3 . Assurez-vous de l'exécuter après Requetes-TP2.sql et avant les
 fichiers de test.
 
-## II)Les Tests:
+## II) Les Tests :
+
+Après avoir complété avec succès les étapes précédentes, nous sommes prêts à passer à l'exécution des
+tests pour évaluer la robustesse et la fiabilité de notre système. Suivez les liens ci-dessus pour 
+accéder à la documentation de chaque test et effectuez-les selon les spécifications pour garantir le
+bon fonctionnement de notre application.
+
+1. **Test des CHECK (contraintes) :**
+    - [Accéder à la documentation du Test des CHECK](Tests-Check.md)
+
+2. **Test des TRIGGER :**
+    - [Accéder à la documentation du Test des TRIGGER](Tests-Trigger.md)
+
+3. **Test de Procédure/Fonction PL/SQL :**
+    - [Accéder à la documentation du Test des Procédure/Fonction PL/SQL]()
+
+
 
 
 
