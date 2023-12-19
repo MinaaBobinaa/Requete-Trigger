@@ -160,3 +160,32 @@ UPDATE Livraison_Commande_Produit
 SET quantite_livree = 99
 WHERE no_commande = 201 AND no_produit = 302;
 ```
+
+## Test requete 3.1 (TP2) : Création automatique de l’ID de la table Paiement (commence à 1000)
+
+### Description du trigger: 
+ Ce déclencheur est activé avant toute opération d'INSERTION dans la table Paiement. Il vérifie si la colonne 
+ `id_paiement` est nulle pour chaque nouvelle ligne insérée. Si c'est le cas, il utilise la séquence increment_par_1
+ pour générer automatiquement la valeur suivante pour cette colonne.
+ 
+### Étapes :
+1. **Action :** Effectuer deux (ou seulement 1) opérations d'INSERTION dans la table Paiement pour des numéros de livraison
+différents.
+2. **Résultat Attendu :**  Les insertions devraient ajouter des enregistrements dans la table Paiement avec des 
+identifiants qui commencent par 1000 et qui incrementent a chaque INSERT.
+
+### Commande SQL:
+```sql
+-- Test 3.1
+INSERT INTO Paiement (date_paiement, montant, type_paiement, no_livraison) 
+VALUES ('27-DEC-2022', 100.00, 'CASH', 50041);
+
+INSERT INTO Paiement (date_paiement, montant, type_paiement, no_livraison) 
+VALUES ('28-DEC-2022', 50.00, 'CASH', 51076);
+```
+```sql
+SELECT * FROM Paiement WHERE no_livraison = 50041;
+```
+```sql
+SELECT * FROM Paiement WHERE no_livraison = 51076;
+```
