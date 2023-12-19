@@ -32,8 +32,3 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('La quantité livrée: ' || v_quantity_delivered);
 END;
 /
-
-BEGIN
-    VerifQuantLivree(302, 201);
-END;
-/
