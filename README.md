@@ -2,32 +2,6 @@
 
 ## I)Ordre d'exécution des Fichiers SQL:
 
-### ***Procédure de Reprise en Cas d'Échec ou d'Erreur dans l'Ordre d'Exécution:***
->En cas de dysfonctionnement ou d'erreur dans l'exécution des étapes, ou si l'ordre
-> d'exécution est incorrect, il est recommandé de procéder à la suppression des 
-> éléments créés (utilisation de DROP) et de recommencer l'ordre d'exécution depuis 
-> le début pour garantir l'intégrité et la cohérence du processus.
->
->Veillez à éliminer manuellement tous les déclencheurs (triggers), procédures,
-> fonctions et séquences qui sont liés aux tables. Cela assure une suppression
-> complète et ordonnée, évitant ainsi les dépendances non traitées dans la base de
-> données
- 
-Voici le code pour supprimer les tables:
-
-```sql
-DROP TABLE Adresse CASCADE CONSTRAINTS;
-DROP TABLE Client CASCADE CONSTRAINTS;
-DROP TABLE Commande CASCADE CONSTRAINTS;
-DROP TABLE Fournisseur CASCADE CONSTRAINTS;
-DROP TABLE Produit CASCADE CONSTRAINTS;
-DROP TABLE Prix_Produit CASCADE CONSTRAINTS;
-DROP TABLE Produit_Fournisseur CASCADE CONSTRAINTS;
-DROP TABLE Commande_Produit CASCADE CONSTRAINTS;
-DROP TABLE Livraison CASCADE CONSTRAINTS;
-DROP TABLE Livraison_Commande_Produit CASCADE CONSTRAINTS;
-DROP TABLE Approvisionnement CASCADE CONSTRAINTS;
-DROP TABLE Paiement CASCADE CONSTRAINTS;
 ```
 ---
 ### 1. Instructions pour Initialiser la Base de Données
@@ -96,6 +70,34 @@ bon fonctionnement de notre application.
 
 3. **Test de Procédure/Fonction PL/SQL :**
     - [Accéder à la documentation du Test des Procédure/Fonction PL/SQL](Tests-P-F.md)
+	
+---
+### ***Procédure de Reprise en Cas d'Échec ou d'Erreur dans l'Ordre d'Exécution:***
+>En cas de dysfonctionnement ou d'erreur dans l'exécution des étapes, ou si l'ordre
+> d'exécution est incorrect, il est recommandé de procéder à la suppression des 
+> éléments créés (utilisation de DROP) et de recommencer l'ordre d'exécution depuis 
+> le début pour garantir l'intégrité et la cohérence du processus.
+>
+>Veillez à éliminer manuellement tous les déclencheurs (triggers), procédures,
+> fonctions et séquences qui sont liés aux tables. Cela assure une suppression
+> complète et ordonnée, évitant ainsi les dépendances non traitées dans la base de
+> données
+ 
+Voici le code pour supprimer les tables:
+
+```sql
+DROP TABLE Adresse CASCADE CONSTRAINTS;
+DROP TABLE Client CASCADE CONSTRAINTS;
+DROP TABLE Commande CASCADE CONSTRAINTS;
+DROP TABLE Fournisseur CASCADE CONSTRAINTS;
+DROP TABLE Produit CASCADE CONSTRAINTS;
+DROP TABLE Prix_Produit CASCADE CONSTRAINTS;
+DROP TABLE Produit_Fournisseur CASCADE CONSTRAINTS;
+DROP TABLE Commande_Produit CASCADE CONSTRAINTS;
+DROP TABLE Livraison CASCADE CONSTRAINTS;
+DROP TABLE Livraison_Commande_Produit CASCADE CONSTRAINTS;
+DROP TABLE Approvisionnement CASCADE CONSTRAINTS;
+DROP TABLE Paiement CASCADE CONSTRAINTS;
 
 
 
