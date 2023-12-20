@@ -2,7 +2,7 @@
 
 ## I)Ordre d'exécution des Fichiers SQL:
 
-```
+
 ---
 ### 1. Instructions pour Initialiser la Base de Données
 
@@ -98,7 +98,7 @@ DROP TABLE Livraison CASCADE CONSTRAINTS;
 DROP TABLE Livraison_Commande_Produit CASCADE CONSTRAINTS;
 DROP TABLE Approvisionnement CASCADE CONSTRAINTS;
 DROP TABLE Paiement CASCADE CONSTRAINTS;
-
+```
 
 
 
