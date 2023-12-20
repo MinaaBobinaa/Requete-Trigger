@@ -17,15 +17,44 @@ Cette commande est utilisee pour activer l'affichage des messages DBMS_OUTPUT.
 ---
 ## Test Requête 2.1:
 
+### 1. Test 1: Un numéro d’article et un numéro de commande qui ont une quantité déjà livrée
+
 **Commande SQL :**
 
 ```sql
 BEGIN
-    checkdeliveredquantity(302, 201);
+    VerifQuantLivree(304, 202);
 END;
 / 
 ```
 **Résultat Attendu :**
+
+```text
+La quantité livrée: 3
+```
+
+### 2. Test 2: Un numéro d’article et un numéro de commande qui n'ont pas une quantité livrée OU aucun des deux existent
+
+**Commande SQL :**
+
+```sql
+BEGIN
+    VerifQuantLivree(302, 201);
+END;
+/ 
+```
+
+```sql
+BEGIN
+    VerifQuantLivree(0, 1);
+END;
+/ 
+```
+**Résultat Attendu :**
+
+```text
+La quantité livrée: 0
+```
 
 ---
 ## Test Requête 2.2:

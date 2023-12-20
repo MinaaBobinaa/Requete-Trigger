@@ -1,5 +1,6 @@
 --------------------------Section 2 : Développement des fonctionnalités ----------------------------
 -----------------------------------------Requête 2.1-------------------------------------------------
+
 CREATE OR REPLACE FUNCTION QuantiteDejaLivree
     (cp_no_produit Commande_Produit.no_produit%TYPE,
     cp_no_commande Commande_Produit.no_commande%TYPE) RETURN NUMBER
@@ -20,6 +21,7 @@ EXCEPTION
         RAISE_APPLICATION_ERROR(-20001,'Erreur interne');
 END;
 
+-------------------------------------
 CREATE OR REPLACE PROCEDURE VerifQuantLivree(
     p_no_produit IN Commande_Produit.no_produit%TYPE,
     p_no_commande IN Commande_Produit.no_commande%TYPE
