@@ -39,3 +39,21 @@ BEGIN
     PreparerLivraison(v_no_client);
 END;
 /
+
+-------------------------------Test Requête 2.3-----------------------------------------------
+
+--TEST 1
+BEGIN
+ProduireFacture(50041);
+END;
+/
+--TEST 2
+BEGIN
+ProduireFacture(51076);
+END;
+/
+--TEST 3
+BEGIN
+ProduireFacture(0);
+END;
+/

@@ -140,3 +140,96 @@ ORA-20001: Client non trouvé pour le numéro spécifié.
 ORA-06512: at "CH091976.PREPARERLIVRAISON", line (num)
 ORA-06512: at line (num)
 ```
+
+---
+## Test Requête 2.3:
+
+### 1. Test 1: Numéro de livraison est dans la table Livraison_Commande_Produit
+
+**Commande SQL :**
+
+```sql
+BEGIN
+ProduireFacture(50041);
+END;
+/
+``` 
+
+**Résultat Attendu :**
+
+```text
+----------------------Informations sur la facture:----------------------------- 
+Nom du client: Tremblay
+Prénom du client: Michel
+Adresse: 123 Maple Street, Toronto, Canada, M5V 2W6
+Numéro de livraison / Facture: 50041
+Date de livraison: 25-11-2022
+-------------------------------Montant: --------------------------------------
+Montant total avant taxe: 1999.96
+Montant des taxes (15%): 299.99
+Montant total de la facture: 2299.95
+---------------------------Liste des produits livrés:-------------------------- 
+Numéro de produit: 303
+Description: Tablette
+Numéro de commande: 201
+Prix unitaire: 499.99
+Quantité livrée: 1
+Prix total du produit: 499.99
+```
+
+### 2. Test 2: Autre exemple du test 1
+
+**Commande SQL :**
+
+```sql
+BEGIN
+ProduireFacture(51076);
+END;
+/
+``` 
+
+**Résultat Attendu :**
+
+```text
+----------------------Informations sur la facture:----------------------------- 
+Nom du client: Brown
+Prénom du client: Michael
+Adresse: 789 Cedar Lane, Vancouver, Canada, V6C 1B1
+Numéro de livraison / Facture: 51076
+Date de livraison: 29-11-2022
+-------------------------------Montant: --------------------------------------
+Montant total avant taxe: 1399.98
+Montant des taxes (15%): 210
+Montant total de la facture: 1609.98
+---------------------------Liste des produits livrés:-------------------------- 
+Numéro de produit: 302
+Description: Smartphone
+Numéro de commande: 205
+Prix unitaire: 699.99
+Quantité livrée: 1
+Prix total du produit: 699.99
+```
+
+### 3. Test 3: Numéro de livraison n'est pas dans la table Livraison_Commande_Produit
+
+**Commande SQL :**
+
+```sql
+BEGIN
+ProduireFacture(0);
+END;
+/
+``` 
+
+**Résultat Attendu :**
+
+```text
+Error starting at line : (num) in command -
+BEGIN
+ProduireFacture(0);
+END;
+Error report -
+ORA-20004: Numéro de livraison non trouvé dans la table Livraison_Commande_Produit.
+ORA-06512: at "CH091976.PRODUIREFACTURE", line (num)
+ORA-06512: at line (num)
+```

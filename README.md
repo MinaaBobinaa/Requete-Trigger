@@ -55,6 +55,9 @@ Enfin vous pouvez exécuter les requêtes du TP3, veuillez suivre ces instructio
 du TP3 . Assurez-vous de l'exécuter après Requetes-TP2.sql et avant les
 fichiers de test.
 
+**Note importante :** Veuillez exécuter chaque séquence, procédure et fonction individuellement afin
+d'éviter des erreurs de compilation potentielles.
+
 ## II) Les Tests :
 
 Après avoir complété avec succès les étapes précédentes, nous sommes prêts à passer à l'exécution des
